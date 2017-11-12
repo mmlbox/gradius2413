@@ -1,0 +1,74 @@
+;[gain=2.0 duration=auto]
+#opll_mode 1
+#tempo 72
+#title { "Ranking"}
+
+@v15 = { ; Hit
+;       TL FB
+        17, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+   5, 0, 0, 0, 0, 2, 0, 1, 1, 0, 0,
+  10, 6,15, 0, 0, 2, 1, 1, 0, 0, 0 }
+
+A l8 v12 q6 
+A @14
+A o3 [c24]6 > [c24]6 < 
+A [ o3 
+A [f24>f24<f24a+24f24>c24<]7 d24>d24<d24g24d24a24 
+A [a+24>a+24<a+24>e24<a+24>f24<]4 
+A [c24>c24<c24|f24c24g24]4 c24d24e24
+A ]0
+
+B l8 ; r2
+B o3 v13 @15 [f24a24>c24<]2 > [f24a24>c24<]2 
+B [
+B v12 @6 
+B o5 [q7 a+8&a+12a4&a24 q5 d12d12e12f|c24d24f24]2 f24a24>c24 
+B q7 e8&e12d4&d24 q5 e12e12d12e12 
+B q7 f6 q7 f8&f12e4&e24 q5 f12f12e12f12 q7 g6 
+B v12 o6
+B [q7 a+8&a+12 a4&a24 q5 d12d12e12f|c24d24f24]2 f24a24>c24 q7 e8&e12
+B d4&d24 q5 e12e12d12e12 q7 f6 q7 f8&f12e4&e24 q5 f12f12e12f12 q7 g6
+B ]0
+
+C l8 ; r2 
+C o2 v10 @15 [f24a24>c24<]2 > [f24a24>c24<]2 
+C [
+C v12 @6
+C o5 [q7 f8&f12f4&f24 q5 <a+12a+12>c12d|<c24d24f24>]2 
+C d24f24a24 q7 >c8&c12<a+4&a+24 q5 >c12c12<a+12>c12 
+C q7 d6 q7 d8&d12c4&c24 q5 d12d12c12d12 q7 e6 
+C v12
+C o6 [q7 f8&f12f4&f24 q5 <a+12a+12>c12d|<c24d24f24>]2 
+C d24f24a24 q7 >c8&c12<a+4&a+24 q5 >c12c12<a+12>c12 
+C q7 d6 q7 d8&d12c4&c24 q5 d12d12c12d12 q7 e6
+C ]0
+
+D l8 r2 
+D [ v10 q4 @11 o6
+D [[a+48]9 r48 [a48]13 r48d12d12e12f|c24d24f24]2 
+D f24a24>c24 [e48]9 r48 [d48]13 r48e12e12d12e12 q7 f6 q6 [f48]9 r48 [e48]13 
+D r48f12f12e12f12 q7 g6 
+D q6 v11 [[a+48]9 r48 [a48]13 r48d12d12e12f|c24d24f24]2 f24a24>c24 
+D [e48]9 r48 [d48]13 r48e12e12d12e12 q7 f6 q6 [f48]9 
+D r48 [e48]13 r48f12f12e12f12 q7 g6 q6 
+D ]0
+
+9E l8 @15 
+9 o4 v13
+E o5 v12
+9E [f24a24>c24<]2 > [f24a24>c24<]2 
+9E [ 
+9 o4 v13
+E o5 v12
+9E f4.f24c24f24f4.c24d24f24f4.f24c24f24f4.e24a24>c24<a+4.
+9E a+24f24a+24a+4.a+24a+24a+24>c4.c24<g24>c24c4.c24<c24c24
+9E ]0
+
+F l8 v14vs15vh15
+F b24 [s24]5 b48b48b24b24b24b24b24 
+F [
+F vs11[bs8bs8bs16.h64h64|bs24bs24bs24]4 vs15 s48s48s24s24 
+F vs11[bs8bs8bs16.h64h64 bs24bs24bs24]3 vs15 m48m48m24m24m48m48s24s24b24s24s24m24m24m24
+F ]0
+

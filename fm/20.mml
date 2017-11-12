@@ -1,0 +1,49 @@
+;[gain=2.0 duration=auto]
+#opll_mode 1
+#tempo 112
+#title { "Farewell"}
+
+A l4 v13 q7 @6 
+A o3 
+A d1c1<b1a+1 [a]4 [a+]4 [b]4 
+A >cde<a>d4.d8d2c4.c8c2<b4.b8
+A b2a+4.a+8a+2 [a]4 [a+]4 [b]4 >cde
+A cc+1 q8 c1r1r1
+
+C l4 q7 @3 v13
+C [o5 a3&a3>d6a3&a3e6g6>c6d3&d3e6f3&f3<f6g6a6>c3&c3d6e6e2d<a>e2d6<a6>c%224]2 
+C c2f6g6>c6 q8 e1r1r1
+
+DE l4 q7 
+DE [ @11 q3 o5
+D v12
+E r32 v11
+DE [d16e16f16a16>d16e16f16a16<]2 
+DE [c16d16e16g16>c16d16e16g16<]2 <
+DE [b16>c16d16f16b16>c16d16f16<<]2
+DE [a+16>c16d16f16a+16>c16d16|f16<<]2
+D f16
+E f32
+DE v11 q7 @9 
+D o6 [c]4 [d]8 ccc|c+
+E o5 [a]4 [a+]4 [g]8
+DE ]2 
+D cc1 q8 c1r1r1
+E  f1 q8 e1r1r1 
+
+9B l4 @3 q6so
+9 v11
+B v10
+9 [ o6 [d]4 [c]4 < [g]4 [a+]4 [a]4 [a+]4 [g]4 > ccc|<a]2 c
+B [ o5 [a]4 [g]4   [d]4 [f]4  [e]4 [f]4  [d]4   ggg|<e]2 g
+9 c+1 c8(c8(c8(c8r2r1r1
+B g+1 g8(g8(g8(g8r1r1r1
+
+F l4 v14 
+F [b4h4h4h8b8b4h4|h4h4]2 
+F h8b16b16s4 
+F [b8h8s8h8b8b8s8|c8]4 b8
+F [b4h8b8|b4s4]4 b8s8s32s8.. 
+F [b8h8s8h8b8b8s8|c8]4 
+F b8b4h8m24m24m24s6m6b12c24r24r2r1
+

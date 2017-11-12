@@ -1,0 +1,41 @@
+;[gain=2.0 duration=auto]
+#opll_mode 1
+#tempo 112
+#title { "Equipment"}
+
+9 l8 v12 @3 o6 q6so
+9 [
+9 [<g> c <g> c16 <gg> | c <g16> c]4 c+<g+16>c+ 
+9 [c+f+c+f+16c+c+|f+c+16f+]4 gd16g
+9 ]0
+
+D l8 v11 @3 o6 q6so
+D [
+D [<cgcg16cc |gc16g>]4 g+c+16g+ 
+D [g+>c+<g+>c+16<g+g+>|c+<g+16>c+<]4 d<a16>d
+D ]0
+
+A l8
+A q8 @5 v13 [
+A o3 c1<a+1>d+1d2c+2f+1e1a1g+2
+A g2
+A ]0
+
+B l16 q7 @10 v12 o4
+B [
+B [g>cdg<]15 g+>c+d+g+ <[c+f+g+>c+<]15 dga>d<
+B ]0
+
+C l16 v12 q7 @3 o7 
+E l16 v11 q7 @3 o6 r32.
+CE [
+CE g2..fef2..d+dd+2<a+2>d2
+CE c+2>c+2..<ba+b2..ag+a2e2g+2g2
+CE ]0
+
+F l16v14vs15vh15 
+F [
+F b:b8.h8vs12bs32bs32bs32bs32vs15s:s:s:s:m:m:m:b:b8.
+F b:h8b8s4h32h32h:c8b:b8.h8b:b:h8.b:s4
+F b8.vs12bs32bs32bs:vs15m:m:m:b4s:s:c8
+F ]0

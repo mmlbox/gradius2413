@@ -1,0 +1,73 @@
+;[gain=2.0 duration=auto]
+#opll_mode 1
+#tempo 116
+#title { "Synthetic Life"}
+
+@v15 = { ; Hit
+;       TL FB
+        13, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+   5, 9, 1, 0, 0, 1, 0, 1, 1, 0, 0,
+   9, 4, 4, 5, 0, 1, 1, 0, 1, 0, 0 }
+
+A l8 [ 
+A v12 q7 @14 
+A [o2 g>g16<gg16>c16d16]4 [<g+>g+16<g+g+16>c16d16]4 [<g>g16<gg16>c16d16]4 
+A [<a+>a+16<a+a+16>d+16f16]4 [c>c16<cc16f16g16]4 
+A [d>d16<dd16g16a16]4 
+A v12
+A [<g16>g16<g16>gg16<g16>g16 [<g16>g16]4 [<d+16>d+16]4 [<f16>f16]4]4 
+A ]0
+
+B l8 [
+B v12 @9 q6 
+B [o5 g16>c16d16 q7 g%108 q6 <g16>c16d16g16]4 
+B v12 @9 f16e16d16c16e16d16c16<b>dgf16e16c16
+B d2<d16<b16>d16g16>c16<b16a16g16a+8.f16f2f16a+16>d+16f16
+B d2d+16d16d+16f16g+16g16f16d+16f16e16d16c16e16c<g
+B >c16d16 q7 e%156 q6 <g16>c16d16e16f16e16f16g16f+8.d16d8.
+B <a16a8.g16g8.f+16f+8.f+16 
+B v13 @1 q5 o6 
+B r16g16g16g16r16f+16 f+16f+16r16e16e16e16  
+B v12 @9 q6 o5
+B [g16>c16d16<g16>g16d16 c16<g16>g16c16d16c16g16<bga+16g16>c16<g16>d16c16<a+16 f16a16f16>c16<g16>d16c16<f16]4 
+B ]0
+
+C l8 [
+C v12 @9 q6 
+C [o5 d16g16a16 q7 >c%108 q6 <d16g16 a16>c16]4 
+C v12 @10 f16e16d16c16e16d16c16<b>dgf16e16
+C c16d2<d16<b16>d16g16>c16<b16a16g16f8.d16d2d16f16>c16
+C d16<a+2>c16<a+16>c16d16f16d+16d16c16f16e16d16c16e16c
+C <g>c16d16 q7 e%156 q6 <g16>c16d16e16f16e16f16g16d8.<a16
+C a8.f+16f+8.d16d8.d16d8.d16 
+C v13 @1 q5 o6 
+C r16d16d16d16r16 d16d16d16r16d16d16d16 
+C v12 q6 @9 o5 
+C [d16g16a16 q7 >c%108 q6 <b4a+2a2]4 
+C ]0
+
+D l8 [
+D @3 q8 v12
+D [o3 g>g16<gg16>c16d16]4 [<g+>g+16 <g+g+16>c16d16]4 
+D [<g>g16<gg16>c16d16]4 [<a+>a+16<a+a+16>d+16f16]4 
+D [c>c16<cc16f16g16]4 [d>d16<dd16g16a16]4 
+D v13 @1 q8 o5
+D [d16g16a16 q7 >c%108 q6 <b4a+2a2]4
+D ]0
+
+9E l8 @3 o6 v12 [
+9E [r1]12 
+9 q3so
+9 [g4r4r%84f16d+4r4f4rf+]3 g4r2f4d+4r4f4r%12 q7f sf f16
+E [d4r4r%84c16<a+4r4>c4rc+]3 d4r2c4<a+4r4>c4r%12 q7c sf c16
+9E ]0
+
+F l8 v14vm13vh15vs15 [
+F [[[m16|b16h16b16]4 m16h16b16]3
+F [m16b16h16b16]2 
+F b16|s16s16s16m32m32bm16bm16b16]3 s32s32s16s16m32m32bm16bm16mb16
+F [s16b16h16b16]15 b16sm16s16s16
+F [s16b16h16b16]14 b16s32s32s16s16m32m32bm16bm16mb16
+F ]0
+

@@ -1,0 +1,61 @@
+;[gain=2.0 duration=auto]
+#opll_mode 1
+#tempo 112
+#title { "The Final Enemy"}
+
+@v15 = { ; Hit
+;       TL FB
+        15, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+   4, 0, 0, 0, 0, 2, 0, 0, 1, 0, 0,
+   8, 6,12, 7, 0, 2, 1, 0, 1, 0, 0 }
+
+@v16 = { ; Synth
+;       TL FB
+         9, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 8, 4, 4, 0,11, 0, 0, 0, 0, 1,
+  10,15, 0, 5, 0, 1, 1, 1, 0, 0, 0 }
+  
+; 9ABDE !
+
+A l16 q7 
+A [ 
+A @14 v12 
+A [ o3 [>c<cfcgc>c<cfcgc>c<c]4 | [b<b>e<b>f+<b>b<b>e<b>f+<b>b<b>]4 ]2 
+A o3 [g8g8a+8gb8g>c<g>c+<g>d<g]4 
+A ]
+
+B l16 
+B [ q7 @10 v10
+B [ o3 [>c<cfcgc>c<cfcgc>c<c]4 | [b<b>e<b>f+<b>b<b>e<b>f+<b>b<b>]4 ]2 
+B o3 [g8g8a+8gb8g>c<g>c+<g>d<g]4 
+B ]0
+
+C l16  
+C [ q7 @10 v10
+C [ o3 [>g<g>c<g>d<g>g<g>c<g>d<g>g<g]4 >| [f+<f+bf+>c+<f+>f+<f+bf+>c+<f+>f+<f+>]4 ]2 
+C @15 q2 o3 v13 g8r%156f16g8r%156f16g8r%156a+16g8r2a+8r4
+C ]0
+
+D l16 
+D [ q7 @0 v15
+D [ o4 [>c<cfcgc>c<cfcgc>c<c]4 | [b<b>e<b>f+<b>b<b>e<b>f+<b>b<b>]4 ]2 
+D o4 [g8g8a+8gb8g>c<g>c+<g>d<g]4
+D ]0
+
+9E l8 
+9E [ @3 v12 q7so
+9 o7 [c<a+rr2>]4 < [barr2]4   > [c<a+rr2>]4  
+E o6 [g frr2]4     [f+err2]4    [g frr2]4  
+9E @15q4
+9 o4 v14 gr%156f16gr%156f16gr%156a+16gr2a+8r4
+E o5 v13 gr%156f16gr%156f16gr%156a+16gr2a+8r4
+9E ]0
+
+F l8 v14
+F [
+F [b8b8s8.b8b8b16|s8]12 s32s32s16 
+F [b16h16b16h16s16b16h16b16|h16b16h16b16s16h16h16b16]4 
+F b16s32s32s16s16m24m24m24m24m24b24
+F ]0

@@ -1,0 +1,67 @@
+;[gain=2.0 duration=auto]
+#opll_mode 1
+#tempo 89
+#title { "The Old Stone Age 2"}
+
+A l8  
+A [ v12 q5  
+A [ @2 o3 [c24f24c24g24c24f24c24a+24c24a24c24g24]4 | [d+24g+24d+24 a+24d+24g+24d+24>c+24<d+24>c24<d+24a+24]4 ]2 
+A d+24g+24d+24a+24d+24
+A g+24d+24>c+24<d+24>c24<d+24a+24d24g24d24a24d24g24c+24f+24c+24
+A g+24c+24f+24c24f24c24g24c24f24c24a+24c24a24c24g24<g24
+A >c24g24<a+24>d+24g+24c+24f+24b24g24c+24<g24 
+A v12 q3
+A g24>f+24g24<g24>f+24g24g24>f+24g24<g24>f+24g24
+A ]0
+
+B l8 
+B [ v11 q5 @8 o5 
+B c4<g4>d+dc<a+>c4<gg24
+B >c24d24g2d+4<a+4>f+4c+4d+4<a+2r12d12c+12
+B c4 g4>d+dc<a+>c4<gg24>c24d24g4.<g24>c24d24d+4<a+a+12>d+24d12
+B <a12>d12c+12<g+12>c+12c4<g4
+B <g24>c24f24<a+24>d+24g+24c+24
+B f+24b24g24d24<g24 
+B @14
+B g24>f+24g24<g24>f+24g24g24>f+24g24<g24>f+24g24
+B ]0
+
+C l8 
+C [ v11 q5 @8 o5 
+C c4<g4>d+dc
+C <a+>c4<gg24>c24d24g2d+4<a+4>f+4c+4d+4<a+2r12d12c+12
+C c4g4>d+dc<a+>c4<gg24>c24d24g4.<g24>c24d24d+4
+C <a+a+12>d+24d12<a12>d12c+12<g+12>c+12c4<g4 <g24>c24f24
+C <a+24>d+24g+24c+24f+24b24g24d24<g24 
+C @5 
+C g24>f+24g24<g24>f+24g24g24>f+24g24<g24>f+24g24
+C ]0
+
+D l8 v11 q5 @7 
+D [o4
+D g4d4a+ag
+D fg4dd24g24a24>d2<a+4f4>c+4<g+4a+4f2r12a12g+12
+D g4d4a+agfg4dd24g24a24>d4.<d24g24a24a+4
+D ff12a+24a12e12a12g+12d+12g+12g4d4<d24g24>c24<f24b24
+D >d+24<g+24>c+24f+24d24<g+24d24d24>c+24d24<d24>c+24d24d24>c+24d24
+D <d24>c+24d24
+D ]0
+
+9E l8 v13 q3so @3
+9E [  
+9 o6 c4 < g4 > d+dc < a+ > c4 < gg24 > c24d24 g2 d+4 < a+4 > f+4 c+4d+4 < a+%112 > d12c+12
+E o5 g4   d4   a+ag   f    g4   dd24   g24a24>d2<a+4   f4  > c+4<g+4a+4   f%112    a12g+12
+9 c4 < g4 > d+dc < a+ > c4 < gg24 > c24d24 g4. < g24 > c24d24d+4 < a+a+12 > d+24d12 < 
+E g4   d4   a+ag   f    g4   dd24   g24a24>d4. < d24   g24a24a+4   f f12    a+24a12
+9 a12 > d12c+12 < g+12 > c+12c4 < g4  r2 
+E f12   a12g+12   d+12   g+12g4   d4  r2
+9 < g24 > f+24g24 < g24 > f+24g24g24 > f+24g24 < g24 > f+24g24
+E < d24 > c+24d24 < d24 > c+24d24d24 > c+24d24 < d24 > c+24d24
+9E ]0
+
+F l8 v14 
+F [
+F [b12s12s12]30 b24s48s48
+F s24s24s24s24m24m24m24m24m24m24b24s24s24b24s24s24
+F b24s24s24m48m48m48m48m48b48
+F ]0

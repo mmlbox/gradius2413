@@ -1,0 +1,35 @@
+;[gain=2.0 duration=auto]
+#opll_mode 0
+#tempo 69
+#title { "Game Over"}
+
+@v15 = { ; Voice
+;       TL FB
+        22, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 8, 4, 4, 0,11, 0, 1, 0, 0, 1,
+   6, 2, 8, 5, 0, 1, 1, 1, 0, 0, 0 }
+
+; ABCDE !
+
+A l8 v12 q7 @10 o3 
+A f24a24>c24f24c24<a24e24g24>c24
+A e24c24<g24d24f24a24>d24<a24f24c24e24g24>c24<g24e24f24
+A a24>c24f24c24<a24e24g24>c24e24c24<g24d24f24a24>d24<a24
+A f24c4r1
+
+B l8 v12 q6 @2 q7 
+B o4 a8&a12 q6 b24>c12 q7 g6 q6 g<a24a24b24
+B a12 q7 g6 q7 a8&a12 q6 b24>c12 q7 g6g6 q6 f24d24 q7 e4
+B r1
+
+C l8 v12 @2 q7 o4 a4>c4g4<a4a4>c4g4<b4r1
+
+D l8 v12 q7 @11 
+D o6 cc<gcgd<gco6 cc<gc<d24f24a24f32a32>d32f32 
+D [c64d64e64g64a64|b8&b32 v-5]6 
+
+E l8 @0 v12 o6 f4e4d4e4f4e4d4c4r1
+
+F l8 @15 v10 o7 f4 c4d4c4 f4 c4d4c4r1
+G l8 @15 v10 o7 c4<g4a4g4>c4<g4a4g4r1

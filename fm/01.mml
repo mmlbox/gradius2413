@@ -1,0 +1,64 @@
+;[gain=2.0 duration=auto]
+#opll_mode 1
+#tempo 60
+#title { "Title Demo"}
+
+@v15 = { ; Hit
+;       TL FB
+         8, 6,
+; AR DR SL RR KL MT AM VB EG KR DT
+   5, 0, 0, 0, 0, 2, 0, 0, 1, 0, 0,
+   9, 6, 3, 4, 0, 2, 1, 0, 0, 0, 0 }
+
+A l8
+A v13 q7 @9
+A o3
+A [c]32 [d+12 [d+24]4 ]6 
+A [c+12 [c+24]4 ]2 [c12 [c24]4 ]4 f1r1
+
+B l8
+B v15 o5 q7 @0
+B [d4fa+24a+24a+24g+4>cd+d4fa+24a+24a+24|g+d+c<g+]2
+B g+8.g+32a+32>cd+ 
+B d+d+24d+24d+24<a+gf12g+12>c+12f12c+12<g+12g12
+B g+24a+4g24a+24>d+24c+8.c+32c+32<g+ff4f12g12>c12c8.c32
+B c32c4r 
+B <a+ad<a2r1
+
+C l8
+C v15 o4 q7 @0
+C [a+4>df24f24f24d+4g+>c<a+4>df24f24f24|d+c<g+d+<]2 
+C d+8.d+32f32g+>c
+C <a+a+24a+24a+24gd+c+12f12g+12>c+12<g+12f12d+12d+24g4d+24
+C g24a+24g+8.g+32g+32fc+c4c12f12g12e8.e32f32g4r
+C ff<a+f2r1
+
+D l8
+D v11 q6 @11 o6
+D [c48>c48<]96 [<d+32g+32a+32>d+32]4 [<f32g+32
+D >c+32f32]3 g+32f32c+32<g+32 [d+32g+32a+32>d+32]4 [<f32g+32
+D >c+32f32]3 g+32f32c+32<g+32 [c32f32g32>c32]4 [<c32e32g32>c32]3 
+D e32g32>c32e32o4 f32a+32>c32f32c32f32g32>c32<f32
+D a+32>c32f32c32f32g32> 
+D c2 r1
+
+9 l8 v13 @3
+9 [o5 @15q8 c4.c24c24c24c4. @10 o2 d16 o1 d16 ]4  
+9 @3 o6 q7 v12
+9 [[d+12d+12d+24d+24]2 [c+12c+12c+24c+24]2 ]2 [
+9 c12c12c24c24]4 [f]4 f16(f16(f16(
+9 f4&f16 r1
+
+E l8 v13 @3
+E [o6 @15q1 c4.c24c24c24c4. (@10 q2 o4 c16 o3 c16) ]4
+E @3 o5 q7 v12
+E [[a+12a+12a+24a+24]2 [g+12g+12g+24g+24]2 ]2 [
+E g12g12g24g24]4 >[c]4 c16(c16(c16(
+E c4&c16 r1
+
+F l8 v14vm12vs15 [
+F [b:b:b16.b64b64s24s24s24b:b:|b16.b64b64 
+F [s32]4 ]2 [s32]8 ]2 [b12b24s24b24b24]11 bm32 
+F [s32]7 bm2 c1
+
+

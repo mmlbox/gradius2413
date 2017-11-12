@@ -1,0 +1,85 @@
+;[gain=2.0 duration=auto]
+#opll_mode 1
+#tempo 116
+#title { "Crystal World"}
+
+A l8 v12 @14 q6 [
+A [o3 a16 [d16e16a]2 d16e16 a16a16d16e16a16]5 
+A b16 [e16f+16b]2 e16f+16b16b16 e16f+16b16a16 
+A [d16e16a]2 d16e16a16a16d16e16a16>c16 
+A [<f16g16>c]2 <f16g16>c16c16<f16g16>c16<f16 
+A [<a16>c16f]2 <a16>c16f16f16<a16>c16f16g16 
+A [<b16>d16g]2 <b16>d16g16g16<b16>d16g16 
+A [a16 [d16e16a]2 |d16e16a16a16d16e16a16]2 a16g16f16e16d16c16<a+16 
+A >[c16f16|a16]3 [a+16d16|f16]3 [c16e16|g16]3 
+A [g16c16|e16]3 [c16f16|a16]3 [a+16d16|f16]3 
+A g16g16a16f16f16a16c16f16 
+A [a16c16|f16]3 [c16d+16|g+16]3 
+A [g+16c+16|f16]3 [d+16g16|a+16]3 
+A [a+16d+16|g16]3 [<a+16>c+16|f+16]3
+A [g+16c16|d+16]3 
+A a+16<f16a+16>d16f16a+16>d16<d%108
+A ]0
+
+B l8 [ @0 v12 q6 
+B [o5 a16 [d16e16a]2 d16e16a16a16d16e16a16]5 
+B b16 [e16f+16b]2 e16f+16b16b16e16f+16b16a16 
+B [d16e16a]2 d16e16a16a16d16e16a16>c16 
+B [<f16g16>c]2 <f16g16>c16c16<f16g16>c16 
+B v13 @2 q5 o6 
+B <f16a16>c16<a16>c16f16c16f16a16f16a16>c16<a16>c16f16a16o4 g16b16>d16<b16
+B >d16g16d16g16b16g16b16>d16<b16>d16g16b16 [e16a16>d16<]4 
+B r2.o3 c64d64e64f+64g64a64b64>c64d64e64f+64g64a64b64
+B >c64d64e64f+64g64a64b64>c64d64e64f+64g64a64b64>c64d64e64f+64 
+B @9 v12 q5 o5 
+B [f16f16|r16]3 a+16a+16r16a+16r16
+B a+16a+16a+16 >[c16c16|r16]5 c16c16 <[f16f16|r16]3 
+B a+16a+16r16a+16r16a+16a+16a+16g16g16a16 
+B [f16f16|r16]4 f16f16 [g+16g+16|r16]3 
+B >c+16c+16r16c+16r16c+16 c+16c+16 [d+16d+16|r16]5 
+B d+16d+16<f+4.f+16f+16g+4.g+16g+16 
+B @11 v13 q5 o5 a+16<c16f16a+16>c16f16a+16 > q7c%108
+B ]0
+
+C l8 [
+C @9 v12 q4 o5
+C [r%156g16r16g16r%156|g16g16g16]2 
+C @6 v13 o4 q5 
+C a16>d16a16 q7 g%120 q5 r16f+16g16f+16d16 q7 e%156 
+C q5 r16<a16>d16a16 q7 g%120 q5 r16f+16g16f+16d16 q7 e%180 q5 r 
+C @11 v13 q5 a2 a8.b8.>c <g2 g8. a8.b q7 a2. 
+C @9 v12 q4 o5 
+C r16g16r16a16r1 
+C @6 v13 o5 q5
+C [c4.c16f16a+4.a16f16|g8. q7 >c%132< q5 r]2 ga16 
+C q7 f%132 q5 rd+4.d+16g+16>c+4.c16<g+16a+8. q7 >d+%108r<d+16
+C f16f+4rc+16f+16g+4rd+16g+16 q7 a+4..>c%108
+C ]0
+
+9E l8 @3 v13q3so 
+E v12
+9E [ o6 
+9 r%156ggr2.g16g16gr2.ggr%180
+E r%156ddr2.d16d16dr2.ddr%180
+9 gr%156er%180gr%156cr%180ar2..gr2..
+E dr%156<b>r%180dr%156<g>r%180er2..dr2..
+9 ar%132gar%180fr4.a+r4.gr16>cr%132<fr4.a+r4. 
+E er%132der%180cr4.fr4.dr16gr%132cr4.fr4. 
+9 ga16fr%132d+r4.>c+r4.<a+r16>d+r%132
+E de16cr%132a+r4. g+r4. fr16  a+r%132
+9 <f+r4.g+r4.a+r4r16>cr%84
+E c+r4.d+r4.fr4r16gr%84
+9E ]0
+
+F l8 [ v14vs15
+F [b16h16s16b16h16b16s16b16h16h16s16h16b16|s:s16]2 s16s16s16 
+F [b16h16s16b16h16b16s16b16h16|h16s16h16b16s:s16]2 [s16]7 
+F [b16h16s16b16h16 b16s16b16h16h16s16h16b16|b16s16h16]4 s16s16s16
+F [b16h16s16b16h16b16s16b16h16h16s16h16b16|b16s16h16]3 s16h16s16b16
+F [s16]7 m32m32m16m16mb16mb16 b16b16b16 
+F [ [b16b16s16b16|b16b16s16b16]4 [s16]4 ]3 
+F [b32]4 s16b16b16s16s16s16 
+F [b32]4 s16
+F b16m32m32mb32m32 [s32]4 b16 [s16]7 
+F [m32]4 [b32]4 [b32]4 [s32]4 
+F ]0

@@ -1,0 +1,86 @@
+;[gain=2.0 duration=auto]
+#opll_mode 1
+#tempo 69
+#title { "The Old Stone Age 1"}
+
+A l8  
+A [
+A v13 q7 @1 
+A [o3 c24f24c24g24c24f24c24a+24c24a24c24g24]4 
+A [d+24g+24d+24a+24d+24g+24d+24>c+24<d+24 >c24<d+24a+24]4 
+A [c24f24c24g24c24f24c24a+24c24a24c24 g24]4 
+A d+24g+24d+24a+24d+24g+24d+24>c+24<d+24>c24<d+24a+24d24g24
+A d24a24d24g24c+24f+24c+24g+24c+24f+24c24f24c24g24c24f24
+A c24a+24c24a24c24g24<g24>c24g24<a+24>d+24g+24c+24f+24b24g24
+A c+24<g24 
+A v12 @2 q6 
+A >c24>c24c24<c24>c+24c+24o2 g24>c24f24a24d+24
+A g+24c24>c24c24<c24>c+24c+24o2 g24>c24f24<g+24>c+24<f+24>c24>c24c24
+A <c24>c+24c+24o2 g24>c24f24a24d+24g+24<g24>f+24g24<g24>f+24g24g24
+A >f+24g24<g24>f+24g24
+A ]0 
+
+B l8 [
+B v12 q5 @0 o6 
+B c4<g4>d+dc<a+>c4<gg24>c24d24 q2 g2 
+B q5 d+4<a+4>f+4c+4d+4<a+2r12d12c+12
+B c4 g4>d+dc<a+>c4<gg24>c24d24g4.<g24>c24d24d+4<a+
+B a+12>d+24d12<a12>d12c+12<g+12>c+12c4<g4 
+B v12 @6 q6 
+B g24>c24f24<a+24>d+24g+24c+24f+24b24g24d24<g24 
+B v12 @9 q6 
+B [c24g24>c24<c+24g+24>c+24r4<]3 
+B <g24>f+24g24<g24>f+24g24g24>f+24g24<g24>f+24g24
+B ]0
+
+C l8 
+C [v12 q5 @0 o5
+C g4d4a+agfg4d
+C d24g24a24 q2 >d2 q5 <a+4f4>c+4<g+4a+4f2r12a12g+12g4
+C d4a+agfg4dd24g24a24>d4.<d24g24a24a+4f
+C f12a+24a12e12a12g+12d+12g+12g4d4 
+C v12 @6 q6 
+C <d24g24>c24<f24b24>d+24<g+24>c+24f+24d24<g+24d24 
+C v12 @9 q6 
+C [g24>d24g24<g+24>d+24g+24r4<]3 
+C <d24>c+24d24<d24>c+24d24d24>c+24d24<d24>c+24d24
+C ]0
+
+D l8 
+D [ @9 v11 q8 
+D [o3 c24f24c24g24c24f24c24a+24c24a24c24g24]4 
+D [d+24g+24d+24a+24d+24g+24d+24>c+24<d+24>c24<d+24a+24]4 
+D [c24f24c24g24c24f24c24a+24c24a24c24g24]4 
+D d+24g+24d+24a+24d+24g+24d+24>c+24<d+24>c24<d+24a+24d24g24d24a24
+D d24g24c+24f+24c+24g+24c+24f+24c24f24c24g24c24f24c24a+24
+D c24a24c24g24 
+D v11 <g24>c24g24<a+24>d+24g+24c+24f+24b24g24c+24<g24
+D v11 >c12c12c12 
+D q7 @8 v11 r24g24>c24f24b24e24 
+D q8 @9 v11 <c12c12c12 
+D q7 @8 v11 >g24>c24f24<g+24>c+24<f+24 
+D q8 @9 v11 <c12c12c12 
+D q7 @8 v11 r24g24>c24f24b24e24
+D q6 @5 v11 <g24>f+24g24<g24>f+24g24g24>f+24g24<g24>f+24 g24 
+D ]0
+
+9E l8 v13 q3so @3 [  
+9 o6 c4 < g4 > d+dc < a+ > c4 < gg24 > c24d24g2d+4   < a+4 > f+4  c+4d+4 < a+2^12 > d12c+12
+E o5 g4   d4   a+ag   f    g4   dd24   g24a24>d2<a+4   f4  > c+4 <g+4a+4   f2^12    a12g+12
+9 c4 < g4 > d+dc < a+ > c4 < gg24 > c24d24 g4. < g24 > c24d24d+4 < a+a+12 > d+24d12 <
+E g4   d4   a+ag   f    g4   dd24   g24a24>d4. < d24   g24a24a+4   f f12    a+24a12
+9 a12 > d12c+12 < g+12 > c+12c4 < g4
+E f12   a12g+12   d+12   g+12g4   d4
+9E r1r1
+9 < g24 > f+24g24 < g24 > f+24g24g24 > f+24g24 < g24 > f+24g24
+E < d24 > c+24d24 < d24 > c+24d24d24 > c+24d24 < d24 > c+24d24
+9E ]0
+
+F l8 v14 [
+F [r1]7 r2
+F b24s48s48s24s24s24s24b24m24
+F m24m24m24b24b24c24m24b24m24m24
+F [b24s24s24m24m24c24b24|c24m24b24m24m24]3 
+F s24s24b24s24s24b24s24s24m48m48m48m48m48b48
+F ]0
+

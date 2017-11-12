@@ -1,0 +1,51 @@
+;[gain=2.0 duration=auto]
+#opll_mode 1
+#tempo 75
+#title { "GRADIUS I"}
+
+A l8 v12 q6 @1 o3 
+A c32c+32d32d+32e32f32f+32g32g+32
+A a32a+32b32>c32c+32d32d+32e32f32f+32g32g+32a32a+32b32>c32 
+A [
+A [o3 f32f16f32]8 > [c32c16c32]2 o3 f32f16f32a32a16a32
+A c32c16c32f32f16f32 [a32a16a32]2 
+A ]0
+
+B l8 v12 q5 @14 o5 
+B c32c+32d32d+32e32f32f+32g32g+32a32a+32
+B b32>c32c+32d32d+32e32f32f+32g32g+32a32a+32b32>c32 
+B [
+B [o4 f32>f32c32d32<g32>f32c32d32<a32>f32c32d32<g32>f32c32d32]2 
+B [a32a32g32a32]4 > [c32c32<a+32>c32]4 
+B ]0
+
+C l8 v11 q5 @14 o4
+C c32c+32d32d+32e32f32f+32g32g+32a32a+32b32>c32
+C c+32d32d+32e32f32f+32g32g+32a32a+32b32>c32 
+C [
+C [o3 f32>f32c32d32<g32>f32c32d32<a32>f32c32d32<g32>f32c32d32]4 
+C ]0
+
+D l8 v12 q6 @10 
+D o5 c32c+32d32d+32e32f32f+32g32g+32a32a+32
+D b32>c32c+32d32d+32e32f32f+32g32g+32a32a+32b32>c32 
+D [
+D [o4 f32>f32c32d32<g32>f32c32d32<a32>f32c32d32<g32>f32c32d32]2 
+D [a32a32g32a32]4 > [c32c32<a+32>c32]4 
+D ]0
+
+9 l8 v12 q6 @9
+9 o4
+E o3
+9E c32c+32d32d+32e32f32f+32g32g+32a32a+32b32>c32
+9E c+32d32d+32e32f32f+32g32g+32a32a+32b32>c32 
+9E [
+9 o4
+E o3
+9E [f32>f32c32d32<g32>f32c32d32<a32>f32c32d32<g32>f32c32d32<]4 
+9E ]0
+
+F l8 v15vb14vm14 b32 vs11[ms32]13 vs15[s32]11 
+F [
+F [b16h32b32|b16h32h32]4 s16h32c32
+F ]0

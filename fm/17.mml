@@ -1,0 +1,121 @@
+;[gain=2.0 duration=auto]
+#opll_mode 1
+#tempo 83
+#title { "Into Hostile Ship"}
+
+@v15 = { ; Hit
+;       TL FB
+        15, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+   4, 0, 0, 0, 0, 2, 0, 0, 1, 0, 0,
+   8, 5, 4, 3, 0, 2, 1, 0, 1, 0, 0 }
+
+A l8 v12 @14
+A [q6 o3 c16r q6 <a+%60 q5 a16r q6 g+8.& q5 a+]2 [g24>g24<]6 g24>d24<g24>d24<g24>g24<g4 
+A [
+A q6 
+A [>c24g24c24g24>c24<g24<]2 
+A [a+24>f24<a+24>f24a+24f24<]2 
+A [>c24g24c24g24>c24<g24<]2
+A [a+24>f24<a+24>f24a+24f24<]2
+A [g+24>d+24<g+24>d+24g+24d+24<]2 
+A [a+24>f24<a+24>f24a+24f24<]2 
+A [g+24>d+24<g+24>d+24g+24d+24<]2
+A g24>d24<g24>d24g24d24<g24>g24<g24>g24<g24>g24 
+A [c24g24c24g24>c24<g24]2 
+A [<f24>c24<f24>c24f24c24]2 
+A [c24g24c24g24>c24<g24]2 
+A <f24>c24f24<g24>d24g24< 
+A [g+24>d+24g+24<a+24>f24a+24c24g24c24g24>c24<g24<a+24>f24<a+24>f24a+24f24<a24>f24<a24>f24a24f24<]2 
+A g+24>d+24g+24<a+24>f24a+24< 
+A [g+24>g+24<g+24>g+24<g+24>g+24<]8 [g24>g24<g24>g24<g24>g24<]4 
+A ]0
+
+B l8 v12 @9 q5 
+B [o6 g16g32g16g32gg16g32g16g32f16 f32f16f32ff16f16f16]2 q7 @9 <g2g2 
+B [
+B @6 v12 q4 o6
+B [f24r24 q7 e%56 q4 e24e24f24 q7 g6 q4 f24e24|d4]2 g4 
+B [q7 f6 q4 d+24d24cc24d24d+24|q7 d%40f%56 q4 ]2 d24r12g4. 
+B @6 v12 q5 o6
+B [g24r24g24g24g24g24g12>g12d+12<|c24r24c24c24c24c24c12>f12c12<]2 
+B c24d24d+24d24d+24f24d+24f24g24f24g24g+24 
+B @6 v13 q5 o7 
+B [q7 c6 q4 c24c24]2 q6 c4 q4 <c24g+24>c24<d24a+24>d24 
+B [q7 c6 q4 c24c24]2 q6 c4 q4 c24d24d+24d24d+24f24 q6 d+24c24
+B <g+24d+>d24<a+24f24d>c24<g+24d+24c>c24<g+24d+24>d24<a+24f24
+B >d+24c24<g+24d+>f24d24<a+24f>d+24c24<g+24d+>d+24c24<d+24>f24
+B d24<f24 
+B @9 o6 v12 q7 g%80 q3 g24g24 q7 g2
+B ]0
+
+C l8 v12 @9 q5 
+C [o6 c16c32c16c32cc16c32c16c32c16c32c16c32cc16c16c16]2 q7 @9 <d2d2 
+C [
+C @6 v12 q4 o5
+C [a24r24 q7 g%56 q4 g24g24a24 q7 a+6 q4 a24g24|g4]2 a+4 
+C [q7 g+6 q4 g24f24d+d+24f24g24|q7f%40a+%56 q4 ]2 g24r12b4. 
+C @6 v12 q5 o5 
+C [a+24r24a+24a+24a+24a+24a+12>a+12g12<|a24r24a24a24a24a24a12>a12f12<]2 
+C a24a+24>c24<a+24>c24d24c24d24d+24d24d+24f24 
+C @6 v11 q6 o6 
+C d+4d+4f4cdd+4d+4f4 q4 d+24f24g24f24g24g+24 q6 d+4d4
+C c4cdd+4f4d+4d+f 
+C @9 o6 v12 q7 d%80 q3 d24d24 q7 d2
+C ]0
+
+9 l8 @15 q4 v13 o3 c8. < a+%60a8.g+8.a+ > c8. < a+%60a8.g+8.a+
+D l8 @15 q4 v13 o4 c8. < a+%60a8.g+8.a+ > c8. < a+%60a8.g+8.a+
+E l8 @15 q4 v13 o5 c8. < a+%60a8.g+8.a+ > c8. < a+%60a8.g+8.a+
+
+D l8 v12 @10 q5 o5
+D q7 v10 >c2<b2 
+D [ 
+D @1 v12 q4 o4
+D [ > [c24g24c24g24>c24<g24]2 < [a+24>f24<a+24>f24a+24f24<]2 ]2 
+D [g+24>d+24<g+24>d+24g+24d+24<]2 
+D > d24c+24d24d+24d24d+24e24d+24e24f24e24f24 
+D [o3 g+24>d+24<g+24>d+24g+24d+24]2 
+D > f24e24f24f+24f24f+24g24f+24g24g+24g24g+24 
+D @11 v12 q5 o6 
+D grcrfr<ar>grcrd+r<gr> 
+D v10 
+D [c24<g24 g24cc24<g24g24c>>c24<f24f24c|c24<f24f24c>>]2 
+D a+24g+24g24f24d+24d24>g4g+4a+4a+24g+24g24g+24g24f24g24
+D f24d+24f24d+24d24d+24d24c24d24c24<a+24>c24<a+24g+24a+24g+24
+D g24g+24g24f24g24f24d+24 
+D @5 o5 v12 q7 c%80 q3 c24c24 q7 b2
+D ]0
+
+E l8 v11 @13 q5 
+E q7 v10 o5 c2<b2 
+E [
+E q8 @13 v10 o5
+E [c24g24c24g24>c24<g24]2 
+E [<a+24>f24<a+24>f24a+24f24]2 
+E [c24g24c24g24>c24<g24]2 
+E [<a+24>f24<a+24>f24a+24f24]2 
+E [<g+24>d+24<g+24>d+24g+24d+24]2 
+E d24c+24d24d+24d24d+24e24d+24e24f24e24f24 
+E [<g+24>d+24<g+24>d+24g+24d+24]2 
+E f24e24f24f+24f24f+24g24f+24g24g+24g24g+24 
+E @0 v10 o5
+E g4<c4f4a4>g4<c4f4a4>d+4
+E <g4d+4d+4f4cdd+4d+4>c2<d+4d4c4cdd+4f4
+E d+4d+fg2
+E ]0
+
+F l8 v14vs15vc13vh15
+F [b16h32h32c16b16h32h32c16s8b16h32h32c16b8b32b32s8]2 
+F [b24s24]6 s24b24b24s24m48m48m48m48m24m24m24m24m24m24
+F [
+F [b24c24b24s24h24h24b24c24b24s24c24h24b24c24b24s24h24h24b24b24b24s24c24h24]4 
+F [b24c24b24s24b24b24b24b48b48b48b48s8]3 
+F b24b24b24b24b24b24s24s24s24s24s24s24
+F [b24b24b24s24b24b24]3 
+F m48m48m24m24m24m24m24 
+F [b24b24b24s24b24b24]3 
+F s24s24s24s24s24s24 
+F [b24c24b24s8b24b24b24|s8]4 s24s24s24 
+F [s24b24s24b24s24b24]2 s24b24b24s24b48b48b48b48s24s24s24s24s24s24
+F ]0

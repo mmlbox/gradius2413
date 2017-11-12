@@ -1,0 +1,72 @@
+;[gain=2.0 duration=auto]
+#opll_mode 1
+#tempo 94
+#title { "Shoot and Shoot"}
+
+@v15 = { ; Hit
+;       TL FB
+        15, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+   4, 0, 0, 0, 0, 2, 0, 0, 1, 0, 0,
+   8, 5, 9, 5, 0, 2, 1, 0, 1, 0, 0 }
+
+@v16 = { ; Hard Brass
+;       TL FB
+        19, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+   7, 8, 1, 0, 0, 1, 0, 0, 1, 0, 0,
+  12, 2,15, 6, 0, 1, 0, 0, 1, 0, 0 }
+  
+A l8 v13 q6 
+A @9
+A o2 [b]4 [b16]4 b32>b32<a+32 >a+32<a32>a32<g+32>g+32 
+A [
+A o3 [<b32>b32]36 [<f32>f32]32 > [<e32>e32]8 [<d32>d32]8 [<c32>c32]8 
+A o2 e32b32>e32<f32>c+32f+32<g32>d32g32<f+32>c+32f+32<e32b32>e16
+A ]0
+
+C l8 v13 q7 o5 @16
+C b>cc+d<b16>c16c+16d16<b32<b32>> c32<c32>c+32<c+32>d32<d32 
+C [
+C q7 o5 v13 [<b16.>f+16.b<b16>e16g+16b16]4 
+C q6 @6 o6 v12 [c16.d16.e16d16.c16.d16c16.<b16.>c16<b16.|a16.b16>]2 > c16.d16 
+C q7 @16 e4.ee4.ee4.e 
+C v13 @16 g32e32<b32>a32f+32d32b32g32e32a32f+32d32g32e32>e16
+C ]0
+
+D l8 v13 q7 o5 @16 
+D b>cc+d<b16>c16c+16d16<b32<b32>> c32<c32>c+32<c+32>d32<d32 
+D [
+D q7 @9 v11 [<b16.>f+16.b<b16>e16g+16b16]4 
+D q6 @6 o5 v12 [c16.d16.e16d16.c16.d16c16.<b16.>c16<b16.|a16.b16>]2 > c16.d16 
+D q8 @0 v15 o4 e2>e2>e2 
+D q8 @7 v12
+D o3 e16.f+16.g16.f+16.e16>e16
+D ]0
+
+E l8 v13 q7 o4 @16
+E f+gg+af+16g16g+16a16f+32r32g32r32g+32r32a32r32 
+E [
+E @7 o5 v13 q7 [<f+16.b16.>f+<f+16b16>e16g+16]4 
+E @6 o5 v12 [a16.b16.>c16<b16.a16.b16a16.g16.a16g16.|f16.g16]2 a16.b16 
+E @10 v13 o4
+E [>e32<b32a32>d32<b32a32|>c+32<b32a32>d32<b32a32>e32<b32e32b32]3 >c32<b32a32
+E >d32<b32a32>e32<b32e32<b32 
+E >b32g32e32>c+32<a32f+32>e32<b32a32>c32<a32f+32b32g32>e16
+E ]0
+
+9B l8 r1 [
+9 r%108r%108r%108r%108 o3 v14 q6 @15 frgrargrfrgrarbr
+B r%108r%108r%108r%108 o4 v13 q4 @15 frgrargrfrgrarbr
+9B r1r1
+9B ]0
+
+F l8 v14vm13
+F m32m32m16m16m16 [m16]4 [m16]4 [m32]4 [s32]4 
+F [
+F [[b32h16b32s16b16h16b16s32s32s32s32|c16]2 s32s32]2
+F [b16b16|s8]4 s16s16 [b16b16|s8]4 s16s32s32
+F [b16b16s16c16b16b16s32|s16.]2 
+F s32s32s32b16b16s16c16b16b16s32s16.
+F m32m32m32m32m32m32m32m32m32m32m32m32s32s32s16
+F ]0

@@ -1,0 +1,62 @@
+;[gain=2.0 duration=auto]
+#opll_mode 1
+#tempo 76
+#title { "Maximum Speed"}
+
+A l8 v12 @14 o2 f1g1 
+A @10 v13 q6 
+A [
+A [>f32>f32<<]16 >>
+A [<g32>g32]16 [<a32>a32]32 
+A [[c32>c32<]12 > [o3 f32>f32<]12 ]2
+A ]0
+
+B l8 v13 q5 @10 
+B [o5 c16<b32>c32d16c32d16c32d16c16<b16]4 
+B [ 
+B v13 q5 @10 
+B [o6 c16<b32>c32d16c32d16c32d16c16<b16>c32c32<b32>c32d16c32d16c32d16c16<b16]2 
+B [<a32>c32e32<a32>c32e32<a32>c32<b32>d32f+32<b32>d32f+32<b32>d32c32e32g32c32e32g32c32e32d32f+32a32d32f+32a32d32f+32]2 
+B v13 @2 q6 
+B [e32.r64g32.r64f+16g32a16g32f+16e32e32g32f+16.g32a16g32f+16a32.r64>c32.r64<b16>c32d16c32<b16a32
+B a32>c32<|b16.>c32d16c32<b16]2 b16>c32d32c16d32e16
+B ]0
+
+C l8 v12 q5 @2 
+C [[o5 a32a32r32]4 [a32r32]2 ]2 [[g32g32r32]4 [g32r32]2 ]2 
+C [
+C [[a32a32r32]4 [a32r32]2 ]2 
+C [[g32g32r32]4 [g32r32]2 ]2 
+C [e4f+4g4|f+4]2 a4 
+C [c32r32 [[c32r32]2 [c32c32r32]2 |c32c32]2 |f32r32 [[f32r32]2 [f32f32r32]2 |f32f32]2 ]2 
+C [f32r32]3 [f32f32r32]2 f32g32a32g16a32b32a16b32>c16<
+C ]0
+
+D l8 v12 q5 @11 
+D [o5 c16<b32>c32d16c32d16c32d16c16<b16]4 
+
+D [
+D @8 v13 q7 o6 
+D [[a32a16]4 a16a16]2 [[g32g16]4 g16g16]2 
+D @7 v13 q5 
+D [e4f+4g4|f+4]2 a4 
+D @8 v13 q7 
+D [c16 [c16c16c32c16c32c16|c32c32]2 |f16 [f16f16f32f16f32f16|f32f32]2 ]2 f16f16f16f32f16f32
+D f16f32g32a32g16a32b32a16b32>c16<
+D ]0
+
+9E l8 @3 v12 q4so
+9 o6 f2r2g2r2
+E o6 c2r2d2r2
+9 [ r1r1 [e4f+4g4|f+4]2 a4r1 r1r1 ]0
+E [ r1r1 [<b4>c+4d4|c+4]2 e4r1 r1r1 ]0
+
+F l8 v15vc13 
+F [[b16h32|h32]4c32|[b16h32h32]3s16h32c32]2 
+F [b16h32h32]2 b32b64b64b32b32s32s32s32s32 
+F [
+F [[b32]4 s32h32c32b32h32b32b32|c32s32h32h32c32]4
+F b32s32s32c16 [b32b32c16|s32h32c16]8 s: 
+F [b32h32b32h32s32h32|b32b32h32b32b32c32]8 
+F s32s32h32s32s32c32
+F ]0

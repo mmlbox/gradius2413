@@ -1,0 +1,60 @@
+;[gain=2.0 duration=auto]
+#opll_mode 1
+#tempo 63
+#title { "Fire Dragon"}
+
+A l8 v13 q6 
+A @14 o2 
+A e32f16f+32g16g+32a16a+32r32b32>c32c32c+32c+32
+A [ 
+A [[o2 a16>a16c32a32<a32|>a32]3 c32r32d32r32e16>d32c32d32]2 
+A [[o2 g+32>g+32<g+32>g+32<b32>g+32<g+32>g+32]2 <g+16>g+16<b32>g+32<g+32b32r32>c+32r32d+16>c+32<b32>c+32]2 
+A [r32g+32g32f+32f32e32d+32d32|r32<g+32a32a+32b32>c32c+32d32]2 d32f32r32<g32g32>g32<g32>g32
+A ]0
+
+B l8 v13 q7 @9 
+B o5 g32g+16a32a+16b32>c16c+16d32d+32d+32e32e32
+B [ @9 q6 v13 o5
+B [[a32a32a32a32>c32<|a16.]3 a16>c32r32d32r32e8&e32< ]2 
+B [[g+32g+32g+32g+32b32|g+16.]3 g+16b32r32c+32r32d+8&d+32]2 
+B v13 @9 o4
+B q7 r32>g+32a32a+32 b32>c32c+32d32 
+B r32<g+32a32a+32b32>c32c+32d32 
+B v12 r32<g+32 a32a+32b32>c32c+32d32d32f32r32g16.a+16
+B ]0
+
+C l8 v13 q7 @9
+C o4 b32>c16c+32d16d+32e16f16f+32g32g32g+32g+32 
+C [ @9 v11 q6 o5 
+C r64 
+C [[a32a32a32a32>c32<|a16.]3 a16>c32r32d32r32e8&e32<]2
+C [[g+32g+32g+32g+32b32|g+16.]3 g+16b32r32c+32r32d+8&d+32]2 
+C v13 @9 o4
+C q7 r64>g+32g32f+32f32e32d+32d32 
+C r32g+32g32f+32f32e32d+32d32 
+C v13 r32g+32g32f+32f32e32d+32d32>d32f32r32 g16.a+16
+C ]0
+
+D l8 v12 q7 @0 v0 o4 b32>c16c+32d16d+32e16f16f+32g32g32g+32g+32
+D [
+D v13 q7 @7so o5
+D a2.>e4<a4>e2a4g+4d+4a+4d+4g+4>g+4b4g+4
+D v0
+D r32<g+32g32f+32f32e32d+32d32 r32g+32g32f+32f32e32d+32d32
+D r32g+32g32f+32f32e32 d+32d32>d32f32r32 g16.a+16
+D ]0
+
+9E l8 v12 @3 q4so o7
+9E r2  
+9E [
+9 ar2..ar2..g+r2..g+r2..r1
+E er2..er2..d+r2..d+r2..r1
+9E ]0
+
+F l8 v14
+F m32m16m32m32h32m32m32b32m32b32m32m64s64s32s32s32
+F [
+F [[b32h32b32h32s32h32h32s32|h32h32b32h32s32h32h32h32]2 |h32m32h32m32s32s32s32s32]4
+F m32m32h32m32m32m32s32s32 [b32m32m32m32 [s32]4 ]3 
+F m64m64s32b32m32s32s32s32s32
+F ]0
