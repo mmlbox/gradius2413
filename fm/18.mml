@@ -1,4 +1,4 @@
-;[gain=2.0 duration=auto]
+;[gain=1.0 duration=auto]
 #opll_mode 1
 #tempo 94
 #title { "Shoot and Shoot"}
@@ -61,7 +61,7 @@ B r%108r%108r%108r%108 o4 v13 q4 @15 frgrargrfrgrarbr
 9B r1r1
 9B ]0
 
-F l8 v14vm13
+F l8 v14vm13vh13vc13
 F m32m32m16m16m16 [m16]4 [m16]4 [m32]4 [s32]4 
 F [
 F [[b32h16b32s16b16h16b16s32s32s32s32|c16]2 s32s32]2

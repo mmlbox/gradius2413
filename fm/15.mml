@@ -1,4 +1,4 @@
-;[gain=2.0 duration=auto]
+;[gain=1.0 duration=auto]
 #opll_mode 1
 #tempo 104
 #title { "SALAMANDER"}
@@ -44,7 +44,7 @@ D o5 <g16ga+>c4r16c16d16d+8.d8.c16cd+f4r16c16d16d+8.f8.g16
 D ga+>c4r16c16d16d+8.d8.c16cd+ q7 f%108r4
 D ]0
 
-F v14vs15vc13vh15l8 [
+F v14vs15vc13vh13l8 [
 F [ 
 F   [bh16bh16h16bh16bh16h16hs16h16h16h16bh16c16 bh16h16h16bh16bh16h16|sh16h16h16h16h16c16]2 hm32m32hm16hm16h16mb16c16
 F   [bh16bh16h16bh16bh16h16hs16h16h16h16bh16c16|bh16h16h16bh16bh16h16 sh16h16h16h16h16c16]2 

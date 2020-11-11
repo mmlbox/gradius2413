@@ -1,4 +1,4 @@
-;[gain=2.0 duration=auto]
+;[gain=1.0 duration=auto]
 #opll_mode 1
 #tempo 63
 #title { "Fire Dragon"}
@@ -51,7 +51,7 @@ D ]0
 E er2..er2..d+r2..d+r2..r1
 9E ]0
 
-F l8 v14
+F l8 v14vh13
 F m32m16m32m32h32m32m32b32m32b32m32m64s64s32s32s32
 F [
 F [[b32h32b32h32s32h32h32s32|h32h32b32h32s32h32h32h32]2 |h32m32h32m32s32s32s32s32]4

@@ -1,4 +1,4 @@
-;[gain=2.0 duration=auto]
+;[gain=1.0 duration=auto]
 #opll_mode 1
 #tempo 116
 #title { "Synthetic Life"}
@@ -63,7 +63,7 @@ D ]0
 E [d4r4r%84c16<a+4r4>c4rc+]3 d4r2c4<a+4r4>c4r%12 q7c sf c16
 9E ]0
 
-F l8 v14vm13vh15vs15 [
+F l8 v14vm13vh13vs15 [
 F [[[m16|b16h16b16]4 m16h16b16]3
 F [m16b16h16b16]2 
 F b16|s16s16s16m32m32bm16bm16b16]3 s32s32s16s16m32m32bm16bm16mb16

@@ -1,4 +1,4 @@
-;[gain=2.0 duration=auto]
+;[gain=1.0 duration=auto]
 #opll_mode 1
 #tempo 100
 #title { "A Way Out of Difficulty"}
@@ -63,7 +63,7 @@ E a16a4a8.a8.a%60 g16g4g8.g8.g%60 f16f4f8.f8.f%60 g16g4g8.g8.
 E g%60   d+2f2d2 > d2
 9E ]0
 
-F l8 v14vc11vh15vs15 vb15b16vb14s16vs10bs16bs16vs15 [
+F l8 v14vc11vh13vs15 vb15b16vb14s16vs10bs16bs16vs15 [
 F [b16b16h:|h:h16b16]4 s32s32b16s32s32b16
 F [b16h16s16b16|h16b16cs:]12 b16s16s16s16
 F ]0

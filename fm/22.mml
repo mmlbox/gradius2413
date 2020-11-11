@@ -1,4 +1,4 @@
-;[gain=2.0 duration=auto]
+;[gain=1.0 duration=auto]
 #opll_mode 1
 #tempo 72
 #title { "Ranking"}
@@ -65,7 +65,7 @@ E o5 v12
 9E a+24f24a+24a+4.a+24a+24a+24>c4.c24<g24>c24c4.c24<c24c24
 9E ]0
 
-F l8 v14vs15vh15
+F l8 v14vs15vh13
 F b24 [s24]5 b48b48b24b24b24b24b24 
 F [
 F vs11[bs8bs8bs16.h64h64|bs24bs24bs24]4 vs15 s48s48s24s24 

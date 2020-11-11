@@ -1,0 +1,139 @@
+;[gain=1.0 duration=auto]
+#opll_mode 1
+#tempo 60
+#title { "Title Demo"}
+
+@v15 = { ; Hit
+;       TL FB
+         8, 6,
+; AR DR SL RR KL MT AM VB EG KR DT
+   5, 0, 0, 0, 0, 2, 0, 0, 1, 0, 0,
+   9, 0, 0, 0, 0, 2, 1, 0, 0, 0, 0 }
+
+@v16 = { ; Hard Brass
+;       TL FB
+        18, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+   7, 7, 1, 1, 0, 1, 0, 0, 1, 0, 0,
+  12,15, 0, 0, 0, 1, 0, 0, 0, 0, 0 }
+
+@v17 = { ; Melody B
+;       TL FB
+        18, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15,15, 0, 0, 0, 4, 0, 0, 1, 0, 1,
+   7,15, 0, 6, 0, 4, 1, 0, 1, 0, 0 }
+
+;@e1 = {0,0,\-127@6f\100@0f\27f} ; Mute Trumpet
+;@e1 = {0,0,\-127@4f\100@9f\27f} ; Mute Trumpet
+
+@e0 = {0,0,@14f@6fe} ; Bass High 
+@e1 = {0,0,\-127@16f\127f} ; Brass A
+@e4 = {0,0,@7.f0=32} ; Hit
+@e5 = {0,0,@10f} ; Timpani
+@e6 = {0,0,@3ef} ; Voice
+@e7 = {0,0,@11f} ; Bell
+
+#macro_offset b = 100 ; B.D
+#macro_offset s = 101 ; Snare
+#macro_offset h = 102 ; H.H
+#macro_offset c = 103 ; CYM
+#macro_offset p = 104 ; Power Snare
+#macro_offset m = 105 ; TOM (m0,m1,m2 -> H M L)
+
+*100 = { y22,156y38,3b: }
+*101 = { y22,106y38,5y23,106y39,4y24,64y40,2 vs12smb: }
+*102 = { y24,156y40,5h: }
+*103 = { y24,156y40,5c: }
+*104 = { y22,192y38,5y24,16y40,4 vb+1 mb: vb-1 }
+
+*105 = { y24,202y40,2m: }
+*106 = { y24,150y40,2m: }
+*107 = { y24,100y40,2m: }
+
+@e20 = {0,0,fe:2d0=192}
+@e21 = {0,0,bce:2d=24.0=255}
+@e22 = {0,0,fe:2c0=192}
+@e23 = {0,0,fb=8.0=40}
+
+;              AL, AR, DR, SL, SR, RR
+@r24 = {0, 0, 100,128, 48,200,  8,  8} ; Hit
+@r25 = {0, 0, 100, 48,255,255,  2,  4} ; Chorus
+
+;1239ADEF !
+
+1 l8 v10 @24
+1 [o4 q8 c4.c24c24c24c4. r ]4  
+1 @25 o5 q7 v9
+1 [[d+12d+12d+24d+24]2 [c+12c+12c+24c+24]2 ]2 [
+1 c12c12c24c24]4 [f]4 f16(f16(f16(f4&f16 r1
+
+2 l8 v10 @24
+2 [o6 q8 c4.c24c24c24c4. r ]4
+2 @25 o4 q7 v9
+2 [[a+12a+12a+24a+24]2 [g+12g+12g+24g+24]2 ]2 [
+2 g12g12g24g24]4 >[c]4 c16(c16(c16(c4&c16 r1
+
+@e8 = {2,0,n20*3f*2n18fn16ed:8.0=120}
+@e9 = {2,0,n10ad0=12}
+@e10 = {2,0,fffcd0=200}
+
+3 l8 v12 @8o3 [
+3 [@9bbb16.b64b64@8f24f24f24@9bb|b16.b64b64 @8 [f32]4 ]2 @8 [f32]8 ]2 
+3 [@9b12b24@8f24@9b24b24]11 @8 r32[f32]7 
+3 r2 @10v12 c1
+
+A l8
+A @e0 o3 v15 q7 h12,2,1,2
+A [c]32 [d+12 [d+24]4 ]6 
+A [c+12 [c+24]4 ]2 [c12 [c24]4 ]4 f1r1
+
+B l8 q7 
+B @16 h10,2,1,1 v13  
+B o5 [d4fa+24a+24a+24g+4>cd+d4fa+24a+24a+24|g+d+c<g+]2 g+8.g+32a+32>cd+ 
+B @17 h20,2,1,1 v13
+B o5 d+d+24d+24d+24<a+gf12g+12>c+12f12c+12<g+12g12
+B g+24a+4g24a+24>d+24c+8.c+32c+32<g+ff4f12g12>c12c8.c32c32c4r 
+B @16 h10,2,1,1 v13
+B o6 a+ad<a2r1
+
+C l8 o4 q7
+C @16 h10,2,1,1 v13 
+C o4 [a+4>df24f24f24d+4g+>c<a+4>df24f24f24|d+c<g+d+<]2 d+8.d+32f32g+>c
+C @17 h20,2,1,1 v13
+C o4 a+a+24a+24a+24gd+c+12f12g+12>c+12<g+12f12d+12d+24g4d+24
+C g24a+24g+8.g+32g+32fc+c4c12f12g12e8.e32f32g4r
+C @16 h10,2,1,1 v13
+C o6 ff<a+f2r1
+
+D l8
+D v10 q6 @e7 o6
+D [c48>c48<]96 
+D v12 
+D [<d+32g+32a+32>d+32]4 [<f32g+32>c+32f32]3 g+32f32c+32<g+32 
+D [d+32g+32a+32>d+32]4 [<f32g+32>c+32f32]3 g+32f32c+32<g+32 
+D [c32f32g32>c32]4 [<c32e32g32>c32]3 e32g32>c32e32
+D o5 f32a+32>c32f32c32f32g32>c32<f32a+32>c32f32c32f32g32>c2 r1
+
+9 l8 v12
+9 [o4 @e4 q8 c4.c24c24c24c4. q7 @e5) o2 d16 o1 d16 (]4  
+9 @e6 o6 q7 h0,2,1,2 v12
+9 [[d+12d+12d+24d+24]2 [c+12c+12c+24c+24]2 ]2 [
+9 c12c12c24c24]4 [f]4 f16(f16(f16(f4&f16 r1
+
+E l8 v12
+E [o5 @e4 q8 c4.c24c24c24c4. q7 @e5 o3 c+16 o2 c+16 ]4
+E @e6 o5 q7 h0,2,1,2 v12
+E [[a+12a+12a+24a+24]2 [g+12g+12g+24g+24]2 ]2 [
+E g12g12g24g24]4 >[c]4 c16(c16(c16(c4&c16 r1
+
+F l8 v15
+F [ [ l8*B*B l16*Br32l64*B*Bl24*S*S*Sl8*B*B | l16*Br32l64*B*B l32[*S]4 ]2 l32[*S]8 ]2
+F [l12*B l24*B*S*B*B]11 l32*B [*S]7 l2*B r1
+
+;F l8 v14vm12vs15 y23,156y39,4 [
+;F [b:b:b16.b64b64s24s24s24b:b:|b16.b64b64 
+;F [s32]4 ]2 [s32]8 ]2 [b12b24s24b24b24]11 bm32 
+;F [s32]7 bm2 c1
+
+

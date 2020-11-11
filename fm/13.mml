@@ -1,4 +1,4 @@
-;[gain=2.0 duration=auto]
+;[gain=1.0 duration=auto]
 #opll_mode 1
 #tempo 76
 #title { "Maximum Speed"}
@@ -51,7 +51,7 @@ E o6 c2r2d2r2
 9 [ r1r1 [e4f+4g4|f+4]2 a4r1 r1r1 ]0
 E [ r1r1 [<b4>c+4d4|c+4]2 e4r1 r1r1 ]0
 
-F l8 v15vc13 
+F l8 v15vc13vh13
 F [[b16h32|h32]4c32|[b16h32h32]3s16h32c32]2 
 F [b16h32h32]2 b32b64b64b32b32s32s32s32s32 
 F [

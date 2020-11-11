@@ -1,0 +1,196 @@
+;[gain=1.0 duration=auto]
+#opll_mode 1
+#tempo 100
+#title { "TABIDACHI"}
+; Tb[ms] = 1024 * (256 - NB) / 4000
+; Default y38,5y22,30 y39,5y23,80 y40,1y24,192
+
+; *B Bass Drum
+; *Z Power Bass Drum 
+; *S Share
+; *P Power Snare
+; *G Tom H
+; *M Tom M
+; *A Tom L
+; *H Hi-Hat
+; *C Cymbal
+
+*100 = { y38,3y22,156 vb+1 b: vb-1 }    ; Bass Drum o2c+
+*101 = { y38,3y22,156y39,3y23,33 vb+1 bs: vb-1 } ; Power Bass Drum o2c
+*102 = { y38,6y22,192 vb+1 b: vb-1 } ; Snare o3f
+*103 = { y38,6y22,192 vb+3 b: vb-3 } ; Power Snare o3f
+*104 = { y22,216y38,6 vb+3 b: vb-3} ; Tom H o3e
+*105 = { y22,67 y38,5 vb+3 b: vb-3} ; Tom M o2b
+*106 = { y22,49 y38,5 vb+3 b: vb-3} ; Tom L o2a+
+*107 = { y40,1y24,192y39,5y23,40h: } ; H.H o6a+
+*108 = { y40,1y24,192y39,5y23,40c: } ; CYM o6f+
+
+@e28 = {2, 4, fedc0=8} ; Snare
+@e29 = {2, 8, *3f*2edc0=32} ; Power Snare
+@e30 = {2, 0, n0fn1a50} ; Hi-Hat
+@e31 = {2, 1, n0fn1eddcc0=48} ; Cymbal
+
+*110 = {r}
+*111 = {r}
+*112 = {@28o3f}
+*113 = {@29o3f}
+*114 = {r}
+*115 = {r}
+*116 = {r}
+*117 = {@30o7a+}
+*118 = {@31o8f+}
+
+;            AL,  AR, DR, SL, SR, RR
+@r0 = {0, 0, 0,   48,255,255,  1,  8} ; Lead
+@r1 = {0, 0, 128, 64, 24,200,  0,  8} ; Brass
+@r2 = {0, 0, 255,255, 24,  0, 12, 12} ; Harpsic
+@r3 = {0, 0, 100, 48,255,255,  2,  4} ; Chorus
+
+
+; 9ABCDEF !
+
+@v15 = { ; Gyuing Bass
+;       TL FB
+        19, 6,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 1, 1,15, 0, 1, 0, 0, 1, 0, 1,
+  15,15, 0, 5, 0, 1, 0, 1, 1, 0, 0 }
+
+@v16 = { ; Hard Brass
+;       TL FB
+        20, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+   6, 8, 1, 0, 0, 1, 0, 0, 1, 0, 0,
+  15, 1,15, 6, 0, 1, 0, 0, 1, 0, 0 }
+  
+#macro_offset {B=100,Z=101,S=102,P=103,G=104,M=105,A=106,H=107,C=108}
+F v12vh12vc13vm15
+F [ 
+F [l16 *Z*H l8 *H l16 *Z*Z*H*C*Z*H l8*H | l16 *Z*Z*P*C]4 l32 *G*G*G*G l16 *A*A
+F [l16 *B*B*S*H|*B*H*S*C]6 
+F *P*H*P*C*B*P*P*B*G*G*B*M*M*B*A*A l32*H*H*H*H l8*Cl16
+F *B*P*P*B*M*M*B*A*M*B*A*Al32*S*S*S*Sl8*P
+F ]0
+
+#macro_offset {B=110,Z=111,S=112,P=113,G=114,M=115,A=116,H=117,C=118}
+3 v12 o2
+3 [ 
+3 [l16 *Z*H l8 *H l16 *Z*Z*H*C*Z*H l8*H | l16 *Z*Z*P*C]4 l32 *G*G*G*G l16 *A*A
+3 [l16 *B*B*S*H|*B*H*S*C]6 
+3 *P*H*P*C*B*P*P*B*G*G*B*M*M*B*A*A l32*H*H*H*H l8*Cl16
+3 *B*P*P*B*M*M*B*A*M*B*A*Al32*S*S*S*Sl8*P
+3 ]0
+
+; #end
+
+9 l8 q7
+9 [ 
+9 v13 @15 o3 hf
+9 [c%180 q5 f32g32>c4<a+4 a8.d32e32f16.d16.|g16]2 g32d32 
+9 v13 @10 q6 o4 h0,2,2,1
+9 [<a+16>a+32a+32]8 [<a16>a32a32]8 [<g+16>g+32g+32]8 
+9 <g16>g16g16 <g16>g16g16<g16>c+16<g16>g16g16<g16>g16g16<g16>c+16<g16>g16
+9 g16<g16>c+16c+16<g16>g16g16<g16>f16<f16>d+16<d+16>c+16<c+16
+9 ]0
+
+@e10 = {0,0,@9f} ; @4->@3 Dist.G
+@e11 = {0,0,@16f}
+@e12 = {0,0,@10.9f}
+@e13 = {0,0,@11f}
+
+A l8 
+A [ 
+A v11 q6so @e10 o6 h12,4,0,1
+A c16r<a+%108a16g16f16a16r16g%132 
+A q7 v11 
+A g+64a64a+64b64>c64c+64d64d+64e64f64f+64g64g+64a64a+64b64 
+A v11 q6 o5
+A >cr16<a+%108a16g16f16a16r16g%180
+A v13 @e11 q6 o5 h20,2,1,2
+A e16f16g16c%108e16f16g16c16e16f16g16c>c4..<e16
+A f16g16c16d+16f16g16c>c4..<d+16f16g16c16 
+A v11 q7 @e12 
+A r16>c16c16r16<b16b16r16a+16a+16r16a16a%60r16a+16a+16r16
+A a16a16r16g+16g+16r16g16g8.f+64f64e64d+64d64c+64c64<b64
+A ]0
+
+C l8 [
+C v11 q6so @e10 o4 h12,4,0,1
+C g16rf%108f16e16d16f16r16e%132 
+C q7 v11
+C q3 d+64e64f64f+64g64g+64a64a+64b64>c64c+64d64d+64e64f64f+64 
+C v11 q6 o4
+C gr16f%108f16e16d16f16r16e%180 
+C v10 @e11 q6 o5 h20,2,1,2
+C r16.e16f16g16c%108e16f16g16c16e16f16g16c>c4..<e16
+C f16g16c16d+16f16g16c>c4..<d+16f16g32 
+C v12 q7 @e12 \0
+C r16f+16f+16r16f16f16r16e16e16r16d+16d+%60r16e16e16r16
+C d+16d+16r16d16d16r16c+16c+8.c64<b64a+64a64g+64g64f+64f64
+C ]0
+
+1 l8 
+1 [
+1 v8 o5 @3 q6 h0,2,1,1 \1
+1 c8.<a+%108a16g16f16ag8.c4 g8.>c%60
+1 c8.<a+%108a16g16f16ag8.c4<g8.>c%60
+1 q7 v6 @0 o5 hf
+1 a+2.>f4e2<g2g+4..>c32d32d+4dc 
+1 q7 v9 @1 o5 hf
+1 o5 f16>c+16c+16<f16>c+16c+16<f16>c+16c+16<g16>c+16c+16f32e32d+32d32c+32c32<b32a+32
+1 <g16>c+16c+16<g16>c+16c+16<g16>c+16g16>c+16c+16<g16>c+16c+16<g16>c+16 
+1 ]0
+
+2 l8 
+2 [
+2 v8 o4 @3 q6 h0,2,1,1 \1
+2 g8.f%108e16d16c16ed8. <g4>d8. g%60
+2 g8.f%108e16d16c16ed8. <g4 d8. g%60
+
+2 q5 v9 @1 o4 h16,3,0,1
+2 e16f16g16c%108e16f16g16c16e16f16g16c>c4..<e16
+2 f16g16c16d+16f16g16c>c4..<d+16f16g16c16 
+
+2 q7 v10 @2 o4 hf
+2 <g16>g16g16 <g16>g16g16<g16>c+16<g16>g16g16<g16>g16g16<g16>c+16<g16>g16
+2 g16<g16>c+16c+16<g16>g16g16<g16>f16<f16>d+16<d+16>c+16<c+16
+
+2 ]0
+
+
+B l8 
+B [
+B v12 o6 @3 q6so h0,2,0,1
+B c8.<a+%108a16g16f16ag8.c4 g8.>c%60
+B c8.<a+%108a16g16f16ag8.c4<g8.>c%60
+B q7 v13 @0 o5 h12,2,1,1
+B a+2.>f4e2<g2g+4..>c32d32d+4dc 
+B @9 o5 v13
+B f16>c+16c+16<f16>c+16c+16<f16>c+16c+16<g16>c+16c+16f32e32d+32d32c+32c32<b32a+32
+B <g16>c+16c+16<g16>c+16c+16<g16>c+16g16>c+16c+16<g16>c+16c+16<g16>c+16 
+B ]0
+
+D l8 
+D [
+D v12 o5 @3 q6so h0,2,0,1
+D g8.f%108e16d16c16ed8. <g4>d8. g%60
+D g8.f%108e16d16c16ed8. <g4 d8. g%60
+D q7 v13 @0 o5 h12,2,1,1\1
+D a+2.>f4e2<g2g+4..>c32d32d+4dc
+D @8 v11 \0 o5
+D f16>c+16c+16<f16>c+16c+16<f16>c+16c+16<g16>c+16c+16 f32e32d+32d32c+32c32<b32a+32 
+D <g16>c+16c+16<g16>c+16c+16<g16>c+16g16>c+16c+16<g16>c+16c+16<g16>c+16 
+D ]0
+
+E l8 [
+E v11 q4 @e13
+E [[o5 c32|g32>c32]6 ]7 
+E v11 o5 c32f32a32>c32<f32a32>c32f32<a32>c32f32a32c32f32a32>c32 
+E v13 q7 o5 @e11
+E [r4d64&e32.e64&f32.f64&g32.<a+64>&c32.r16c64&>c32.&c4.<]2 r4c64&d+32.
+E e64&f32.f64&g32.<a+64>&c32.r16c64&>c32.&c4.
+E v12 q6 @e10 
+E r64r16c16c16r16<b16b16r16a+16a+16r16
+E a16a%60r16a+16a+16r16a16a16r16g+16g+16r16g16g8.f+64f64
+E e64d+64d64c+64c64
+E ]0

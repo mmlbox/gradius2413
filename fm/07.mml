@@ -1,4 +1,4 @@
-;[gain=2.0 duration=auto]
+;[gain=1.0 duration=auto]
 #opll_mode 1
 #tempo 81
 #title { "Shooting Star"}
@@ -73,7 +73,7 @@ A q7 g12g%56g12g%80ga+12a+%56a+12a+%80a+24a24g+24g4b4>c4d4r1r1
 A d2d4<a g+
 A ]0
 
-F l8 v14vs15 [b:b:b16.h64h64b24h24c24b:b:|b16.vs-3bs64bs64vs+3s24s24s24]2 b:bs48bs48s24s24
+F l8 v14vh13vs15 [b:b:b16.h64h64b24h24c24b:b:|b16.vs-3bs64bs64vs+3s24s24s24]2 b:bs48bs48s24s24
 F [
 F [b12b24|s24b12]7 vs-3bs48bs48vs+3s24s24b12b24s24s24s24
 F [b12b24s24b12]4

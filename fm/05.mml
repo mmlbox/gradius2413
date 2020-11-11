@@ -1,4 +1,4 @@
-;[gain=2.0 duration=auto]
+;[gain=1.0 duration=auto]
 #opll_mode 1
 #tempo 81
 #title { "Burning Heat"}
@@ -103,7 +103,7 @@ E d+12d+6d+12d+24d+24d+12
 E d12d6d12d24d24dc+12c+6d+24d+24d+ 
 E ]0
 
-F l8 v14vs15 b24 vs-3 bs48bs48 vs+3 s24s24s24b24 
+F l8 v14vh13vs15 b24 vs-3 bs48bs48 vs+3 s24s24s24b24 
 F [
 F [b24h24b24s24b24h24|b24 h24b24s24b24c24]4 b24s24s24s24s24s24 
 F [b24h24b24vs-1bs24vs+1m24h24b24h24b24vs-1bs24vs+1m24c24]3 

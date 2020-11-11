@@ -1,0 +1,95 @@
+;[gain=1.0 duration=auto]
+#opll_mode 1
+#tempo 112
+#title { "Equipment"}
+
+@v15 = { ; Voice
+;       TL FB
+        28, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+   6, 8, 2, 4, 1, 1, 0, 0, 1, 0, 0,
+   7, 0, 0, 6, 0, 1, 1, 0, 1, 0, 0 }
+
+#macro_offset b = 100 ; B.D
+#macro_offset s = 101 ; Snare
+#macro_offset h = 102 ; H.H
+#macro_offset c = 103 ; CYM
+#macro_offset p = 104 ; Power Snare
+#macro_offset m = 105 ; TOM (m0,m1,m2 -> H M L)
+
+*100 = { y22,156y38,3b: }
+*101 = { y22,106y38,5vs-4sb:vs+4 }
+*102 = { y24,156y40,5h: }
+*103 = { y24,156y40,5c: }
+*104 = { y22,192y38,5y24,16y40,4 vb+1 mb: vb-1 }
+
+*105 = { y24,202y40,2m: }
+*106 = { y24,156y40,2m: }
+*107 = { y24,120y40,2m: }
+
+@e0 = {0,0,@10fd=16}
+@e1 = {0,0,@9f@6f}
+
+;            AL,  AR, DR, SL, SR, RR
+@r3 = {0, 0, 100, 48,255,255,  2,  8}
+
+; DE !
+D l8 v12 @3 o6 q6so h0,2,1,2
+1 l8 v9 @3 o5 q7 
+1D [
+1D [<g> c <g> c16 <gg> | c <g16> c]4 c+<g+16>c+ 
+1D [c+f+c+f+16c+c+|f+c+16f+]4 gd16g
+1D ]0
+
+E l8 v11 @3 o6 q6so h0,2,1,2
+2 l8 v9 @3 o5 q7 
+2E [
+2E [<cgcg16cc |gc16g>]4 g+c+16g+ 
+2E [g+>c+<g+>c+16<g+g+>|c+<g+16>c+<]4 d<a16>d
+2E ]0
+
+; #end
+
+9 l8 h20,4,1,1
+9 q8 @e1 v13 [
+9 o3 c1<a+1>d+1d2c+2f+1e1a1g+2
+9 g2
+9 ]0
+
+A l16 q7 @e0 v11 o5
+A [
+A [g>cdg<]15 g+>c+d+g+ <[c+f+g+>c+<]15 dga>d<
+A ]0
+
+B l16 v13 q7 @15 o7 h20,2,1,-2
+C l16 v11 r32. q7 @15 o6 h20,2,3,-1
+BC [
+BC g2..fef2..d+dd+2<a+2>d2
+BC c+2>c+2..<ba+b2..ag+a2e2g+2g2
+BC ]0
+
+;F l16v14vs15vh15 
+;F [
+;F b:b8.h8vs12bs32bs32bs32bs32vs15s:s:s:s:m:m:m:b:b8.
+;F b:h8b8s4h32h32h:c8b:b8.h8b:b:h8.b:s4
+;F b8.vs12bs32bs32bs:vs15m:m:m:b4s:s:c8
+;F ]0
+
+F v14vm15vh12
+F [
+F l16*Bl8*Br16*H l32*S*S*S*S l16 *P*P*P*P *M0*M1*M2*B*Br8
+F *B l8*H*B*P r 
+F l32*H*H l16*H l8*C l16*B l8*B r16*H l16*B*B*H r8*B*P r8.
+F *Br8l32*S*Sl16*S*M0*M1*M2*Br8.*S*S*Cr
+F ]0
+
+@e8 = {2,0,n18fedc0=96}
+@e9 = {2,0,n14edc0=16}
+@e10 = {2,0,fffcd0=200}
+
+3 l16 v12 [
+3 @8
+3 rr8.r8@9c32c32c32c32@8ccccrrrrr8.
+3 rr8r8c4r32r32r@10c8rr8.r8rrr8.r@8c4
+3 r8.@9c32c32crrrr4cc @10c8
+3 ]0

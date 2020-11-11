@@ -1,4 +1,4 @@
-;[gain=2.0 duration=auto]
+;[gain=1.0 duration=auto]
 #opll_mode 1
 #tempo 83
 #title { "Into Hostile Ship"}
@@ -105,7 +105,7 @@ E <g4d+4d+4f4cdd+4d+4>c2<d+4d4c4cdd+4f4
 E d+4d+fg2
 E ]0
 
-F l8 v14vs15vc13vh15
+F l8 v14vs15vc13vh13
 F [b16h32h32c16b16h32h32c16s8b16h32h32c16b8b32b32s8]2 
 F [b24s24]6 s24b24b24s24m48m48m48m48m24m24m24m24m24m24
 F [

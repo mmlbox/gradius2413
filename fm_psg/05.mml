@@ -1,0 +1,180 @@
+;[gain=1.0 duration=auto]
+#opll_mode 1
+#tempo 81
+#title { "Burning Heat"}
+#alloc {f=2500}
+
+@v15 = { ; Melody A
+;       TL FB
+        25, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+   9,15, 0, 6, 0, 2, 0, 0, 1, 0, 1,
+  12, 3, 1, 6, 0, 4, 0, 0, 1, 0, 1 }
+
+@v16 = { ; Melody B
+;       TL FB
+        20, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 4, 1, 6, 0, 1, 0, 0, 1, 0, 0,
+   8, 2, 1, 6, 0, 1, 1, 0, 1, 0, 0 }
+
+*100 = { y38,3y22,156 vb13 b: }    ; Bass Drum o2c+
+*101 = { y38,3y22,156y39,3y23,156 vb14vs10 bs: } ; Power Bass Drum o2c
+*102 = { y22,106y38,5y23,106y39,4y24,156y40,2 vb12vm13smb:}
+;*102 = { y38,6y22,192 vb13 b:} ; Snare o3f
+*103 = {y22,106y38,5y23,106y39,4y24,64y40,2 vb15vm15smb:} ; Power Snare o3f
+*104 = { y22,216y38,6 vb15 b:} ; Tom H o3e
+*105 = { y22,67 y38,5 vb15 b:} ; Tom M o2b
+*106 = { y22,49 y38,5 vb15 b:} ; Tom L o2a+
+*107 = {r};{ y40,1y24,192y39,5y23,40h: } ; H.H o6a+
+*108 = {r};{ y40,1y24,192y39,5y23,40c: } ; CYM o6f+
+
+@e28 = {2,14, fedc0=13} ; Snare
+@e29 = {2, 0, n17*3f*2n16fn15ed0=128} ; Power Snare
+@e30 = {2, 4, ea70} ; Hi-Hat
+@e31 = {2, 4, feecc0=68} ; Cymbal
+
+*110 = {r}
+*111 = {r}
+*112 = {@28o3f}
+*113 = {@29o4f+}
+*114 = {r}
+*115 = {r}
+*116 = {r}
+*117 = {@30o7a+}
+*118 = {@31o8f+}
+
+; 1239ABCDE !
+
+#macro_offset {B=100,Z=101,S=102,P=103,G=104,M=105,A=106,H=107,C=108}
+F l8 v12vc8vm14vs13 
+F l24 *B l48*S*S l24*P*P*P*B
+F [
+F [*B*H*B*S*B*H|*B*H*B*S*B*C]4 *B*S*P*P*P*P 
+F [*B*H*B*S*M*H*B*H*B*S*A*C]3 *Bl48*S*Sl24*P*P*P*P*Z*G*Gl48*M*M*M*A*A*Al24
+F [*Z*H*Z*P*Z*H*Z*H*Z*P*Z*C]3 *P*Z*P*Z*P*Z*P*Z*P*Z*P*P
+F [*Z*H*Z*P*Z*H*Z*H*Z*P*Z*C]3 *Z*P*P*P*Z*H*Z*H*Zl48*S*S*P*P*A*Zl24
+F ]0
+
+#macro_offset {B=110,Z=111,S=112,P=113,G=114,M=115,A=116,H=117,C=118}
+3 l8 v12o2 
+3 l24 *B l48*S*S l24*P*P*P*B
+3 [
+3 [*B*H*B*S*B*H|*B*H*B*S*B*C]4 *B*S*P*P*P*P 
+3 [*B*H*B*S*M*H*B*H*B*S*A*C]3 *Bl48*S*Sl24*P*P*P*P*Z*G*Gl48*M*M*M*A*A*Al24
+3 [*Z*H*Z*P*Z*H*Z*H*Z*P*Z*C]3 *P*Z*P*Z*P*Z*P*Z*P*Z*P*P
+3 [*Z*H*Z*P*Z*H*Z*H*Z*P*Z*C]3 *Z*P*P*P*Z*H*Z*H*Zl48*S*S*P*P*A*Zl24
+3 ]0
+
+;            AL,  AR, DR, SL, SR, RR
+@r0 = {0, 0, 0,   48,255,255,  1,  8} ; Lead
+@r1 = {0, 0, 128, 64, 24,200,  0,  8} ; Brass
+@r2 = {0, 0, 255,255, 24,  0, 12, 12} ; Harpsic
+@r3 = {0, 0, 100, 48,255,255,  2,  4} ; Chorus
+
+@e10 = {0,0,@13fe}
+
+; abcdef !
+
+9 l8 v14 q7 @e10 h0,4,1,1 o2
+9 g+24>g+24<g+24a+24>a+24<a+24> 
+9 [ 
+9 v13
+9 [[c12c24c24c24c24]3 c24c24c24<a24a+24b24>]2 <
+9 [a+12a+24a+24f24a+24]2
+9 a12a24a24f24a24a12a24f24a24>c24 
+9 [d+12d+24d+24<a+24>d+24]2 
+9 f12f24f24c24f24f12f24f24c24<f24 
+9 [a+24>a+24<a+24>f24<a+24>a+24<]2 
+9 [g+24>g+24<g+24>d+24<g+24>g+24<]2 
+9 [f+24>f+24<f+24>c+24<f+24>f+24<]2 
+9 f24>f24<f24>c24<f24>f24<f24>f24<f24f24g24a24 
+9 [a+24>a+24<a+24>f24<a+24>a+24<]2 
+9 [g+24>g+24<g+24>d+24<g+24>g+24<]2 
+9 [g24>g24<g24>d24<g24>g24<]2 
+9 g+24>d+24g+24<g+a+24>f24a+24<a+>
+9 ]0
+
+A l8 v14 q6 @15 o3 h10,3,1,-4
+A g+24>g+24<g+24a+24>a+24<a+24 
+A [
+A v14 @15 q7 o5
+A f24e24d24e24c24<g6g24>c24<g24g+24>c24<g+24>d+<a+24
+A >d24<a+24>ff24e24f24g4g24>c24<g24g+24d+24g+24>c<a+24f24a+24>d 
+A v14 @16 q6 o6 
+A e6e24f24g12f12e12f12c12f12
+A a4g+24g24g+24a+%39g64g+64a+64>d+24<a+24g24a+24a24a+24>c4<a24>c24f24 
+A v14 @15 q7 o6 
+A d6d24d+24f4f6f24a+24
+A >d+12d12<a+12>c+6<a+24f+24>c+<f+24a+24>c+24f12c12<a+12a12f12c12
+A d6d24d+24f4f6f24a+24>d+12d12<a+12a+6a+24>d24g4r24c+24
+A c+24c+r24d+24d+24d+48c48<a48d+48c48<a48
+A ]0
+
+B l8 v14 q6 @15 o3 h10,3,1,-4
+B r48 g+24>g+24<g+24a+24>a+24<a+48 
+B [
+B v12 @15 q6 r48o5 
+B f24e24d24e24c24<g6g24>c24<g24g+24>c24
+B <g+24>d+<a+24>d24<a+24>ff24e24f24g4g24>c24<g24g+24d+24g+24
+B >c<a+24f24a+24>d%20 
+B v12 @16 q6 o6 
+B r24e6e24f24g12f12e12f12c12f12a4g+24g24g+24a+%39g64g+64a+64>d+24<a+24g24a+24
+B a24a+24>c4<a24r24 
+B v14 @15 q6 o5
+B a+6a+24>c24d4d6d24f24>c12<a+12f12a+6f+24c+24a+c+24f+24a+24>c12<a12
+B f12f12c12<a12a+6a+24>c24d4d6d24f24>c12<a+12f12g6g24
+B a+24>d4r24<a+24a+24a+r24>c24c24c48<g+48d+48c48<g+48d+48
+B ]0
+
+@e11 = {0,0,@5f@9f}
+@e12 = {0,0,@1f}
+@e13 = {0,0,@0f.@3f}
+@e15 = {0,0,@15f}
+
+C l8 v13 q7 @e15 o3 h10,3,1,-4
+C g+24>g+24<g+24a+24>a+24<a+24 
+C [ 
+C v13 q6 @e11 o5
+C [[c12c24c24c24c24]2 <g+12g+24g+24g+24g+24a+12a+24a+24 a+24a+24>]2 
+C v12 q4 @e12 
+C [c24e24c24g24c24>c24<]2 [c24f24c24a24c24>c24<]6 
+C v12 q6 @e13 o5 
+C [a+12a+24a+24a+24a+24]2 
+C [g+12g+24g+24g+24g+24]2 
+C [f+12f+24f+24f+24f+24]2 a12>c12
+C f12>f48c48<a48>c48<a48f48a48f48c48f48c48<a48 
+C [a+12a+24a+24a+24a+24]2 
+C [g+12g+24g+24g+24g+24]2 
+C [g12g24g24g24g24]2 
+C r24f+24f+24f+r24g+24g+24g+
+C ]0
+
+D @3 l8 v11 r4 q6so h0,2,0,1
+1 @3 l8 v9 r4 q8
+1D [ 
+D o6 
+1 o5
+1D [c4.c24c24c24 <g+4a+4>]2 r1r1
+D o6
+1 o5
+1D a+12a+6a+12a+24a+24a+12g+12g+6g+12g+24g+24g+12f+12f+6
+1D f+12f+24f+24f+12f12f12f12f12f12f12a+12a+6a+12a+24a+24a+12
+1D g+12g+6g+12g+24g+24g+12g12g6g12g24g24gf+12f+6g+24g+24g+ 
+1D ]0
+
+E @3 l8 v11 r4 q6so h0,2,0,1 
+2 @3 l8 v9 r4 q8
+2E [  
+E o5 
+2 o4
+2E [g4.g24g24g24 d+4f4]2 r1r1  
+E o6
+2 o5
+2E f12f6f12f24f24f12d+12d+6d+12d+24d+24d+12
+2E c+12c+6c+12c+24c+24c+12c12c12c12c12c12c12
+2E f12f6f12f24f24f12
+2E d+12d+6d+12d+24d+24d+12
+2E d12d6d12d24d24dc+12c+6d+24d+24d+ 
+2E ]0
+

@@ -1,4 +1,4 @@
-;[gain=2.0 duration=auto]
+;[gain=1.0 duration=auto]
 #opll_mode 1
 #tempo 112
 #title { "Farewell"}
@@ -39,7 +39,7 @@ B [ o5 [a]4 [g]4   [d]4 [f]4  [e]4 [f]4  [d]4   ggg|<e]2 g
 9 c+1 c8(c8(c8(c8r2r1r1
 B g+1 g8(g8(g8(g8r1r1r1
 
-F l4 v14 
+F l4 v14vh13vc13
 F [b4h4h4h8b8b4h4|h4h4]2 
 F h8b16b16s4 
 F [b8h8s8h8b8b8s8|c8]4 b8

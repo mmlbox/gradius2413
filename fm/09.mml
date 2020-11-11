@@ -1,4 +1,4 @@
-;[gain=2.0 duration=auto]
+;[gain=1.0 duration=auto]
 #opll_mode 1
 #tempo 116
 #title { "Crystal World"}
@@ -71,7 +71,7 @@ E de16cr%132a+r4. g+r4. fr16  a+r%132
 E c+r4.d+r4.fr4r16gr%84
 9E ]0
 
-F l8 [ v14vs15
+F l8 [ v14vh13vs15
 F [b16h16s16b16h16b16s16b16h16h16s16h16b16|s:s16]2 s16s16s16 
 F [b16h16s16b16h16b16s16b16h16|h16s16h16b16s:s16]2 [s16]7 
 F [b16h16s16b16h16 b16s16b16h16h16s16h16b16|b16s16h16]4 s16s16s16

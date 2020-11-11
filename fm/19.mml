@@ -1,4 +1,4 @@
-;[gain=2.0 duration=auto]
+;[gain=1.0 duration=auto]
 #opll_mode 1
 #tempo 112
 #title { "The Final Enemy"}
@@ -53,7 +53,7 @@ E o6 [g frr2]4     [f+err2]4    [g frr2]4
 E o5 v13 gr%156f16gr%156f16gr%156a+16gr2a+8r4
 9E ]0
 
-F l8 v14
+F l8 v14vh13
 F [
 F [b8b8s8.b8b8b16|s8]12 s32s32s16 
 F [b16h16b16h16s16b16h16b16|h16b16h16b16s16h16h16b16]4 

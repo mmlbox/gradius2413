@@ -1,4 +1,4 @@
-;[gain=2.0 duration=auto]
+;[gain=1.0 duration=auto]
 #opll_mode 1
 #tempo 100
 #title { "TABIDACHI"}
@@ -87,7 +87,7 @@ E a16a%60r16a+16a+16r16a16a16r16g+16g+16r16g16g8.f+64f64
 E e64d+64d64c+64c64
 E ]0
 
-F v14vm14vs15 l8 
+F v13vm14vs15 l8 
 F [ 
 F [b16h16h:b16b16h16c16b16h16h:|b16b16s16c16]4 m32m32m32m32m16m16
 F [b16b16s16h16|b16h16s16c16]6 vs-3 bs16h16bs16c16 

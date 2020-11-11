@@ -1,4 +1,4 @@
-;[gain=2.0 duration=auto]
+;[gain=1.0 duration=auto]
 #opll_mode 1
 #tempo 112
 #title { "Equipment"}
@@ -33,7 +33,7 @@ CE g2..fef2..d+dd+2<a+2>d2
 CE c+2>c+2..<ba+b2..ag+a2e2g+2g2
 CE ]0
 
-F l16v14vs15vh15 
+F l16v14vs15vh13 
 F [
 F b:b8.h8vs12bs32bs32bs32bs32vs15s:s:s:s:m:m:m:b:b8.
 F b:h8b8s4h32h32h:c8b:b8.h8b:b:h8.b:s4

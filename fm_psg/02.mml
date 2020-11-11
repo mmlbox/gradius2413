@@ -1,0 +1,51 @@
+;[gain=1.0 duration=auto]
+#opll_mode 0
+#tempo 59
+#title { "Coin"}
+
+; @t -> tempo
+; 5000000 / 1024 / (256 - @t)
+
+@v15 = { ; Bell
+;       TL FB
+        20, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 0, 0, 6, 0, 3, 0, 0, 1, 0, 1,
+  15, 5, 3, 4, 0, 4, 1, 0, 1, 0, 0 }
+
+9ABCDEFGH @15 
+
+@e0 = {0,0,feeddca1=40}
+
+1 l8 v11 @0
+1 q7 o5> b32>d32g32b32gr64 r1
+
+2 l8 v11 @0
+2 q7 o4> b32>d32g32b32gr64 r1
+
+3 l8 v11 @0
+3 q7 o4> d32g32b32>d32<br64 r1
+
+A l8 v15
+A q7 o5> b32>d32g32b32gr64 r1
+
+B l8 v14 \1
+B q7 o5> b32>d32g32b32gr64 r1
+
+C l8 v12
+C q7 o4> b32>d32g32b32gr64 r1
+
+D l8 v11 \1
+D q7 o4> b32>d32g32b32g r1
+
+E l8 v13 r64
+E q7 o5> b32>d32g32b32g r1
+
+F l8 v12 r64 \1
+F q7 o5> b32>d32g32b32g r1
+
+G l8 v15
+G q7 o4> d32g32b32>d32<br64 r1
+
+H l8 v14 \1
+H q7 o4> d32g32b32>d32<br64 r1

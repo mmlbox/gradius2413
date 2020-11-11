@@ -1,4 +1,4 @@
-;[gain=2.0 duration=auto]
+;[gain=1.0 duration=auto]
 #opll_mode 1
 #tempo 75
 #title { "GRADIUS I"}
@@ -45,7 +45,7 @@ E o3
 9E [f32>f32c32d32<g32>f32c32d32<a32>f32c32d32<g32>f32c32d32<]4 
 9E ]0
 
-F l8 v15vb14vm14 b32 vs11[ms32]13 vs15[s32]11 
+F l8 v15vb14vm14vh13 b32 vs11[ms32]13 vs15[s32]11 
 F [
 F [b16h32b32|b16h32h32]4 s16h32c32
 F ]0
